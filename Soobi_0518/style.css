@@ -1,0 +1,207 @@
+body {
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", Tohoma, Arial;    
+    width: 100%;
+}
+
+/* 畫面寬度<=768px的CSS */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #logo img {
+        height: 60px;
+        width: auto;
+    }
+
+    #collapsibleNavbar .nav-item {
+        text-align: center;
+        border-bottom: 1px solid #666;
+    }
+    #menu-bar li a {
+        background-color: #428bca;
+        opacity: 0.8;
+        color: #eee;
+    }
+    #menu-bar .dropdown-item {
+        text-align: center;
+    }
+    #menu-bar2 li a {
+        background-color: #333333;
+        color: #eee;
+    }
+    #carousel-area #carouselExampleIndicators .carousel-indicators li{
+        height: 5px;
+        width: 5px;
+        margin: 0 3px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: 1;
+    }
+    #carousel-area #carouselExampleIndicators .carousel-indicators{        
+        right: 10px;
+        bottom: 5px;       
+        
+    }
+}
+
+/* 畫面寬度>=768px的CSS */
+@media (min-width: 768px) {  
+    
+    #pc-top1 .nav-item a {
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 9px;
+    }
+    
+    #air {
+        color: #fff;
+        font-size: 14px;
+    }
+    #air span {
+        background-color: #9cff9c;
+        border-radius: 5px;
+        padding: 2px 6px;
+        color: #333333;
+        font-size: 15px;
+    }
+    #Phone-top2 {
+        padding: 0;
+    }
+    #Phone-top2 .phone-top4 .nav-item {
+        width: 85px;
+    }
+    #Phone-top2 .phone-top4 .nav-item a {
+        color: #fff;
+    }
+    
+    #menu-bar {
+        flex-wrap: wrap;
+    }
+    #menu-bar .nav-item > a {
+        position: relative;
+        color: #333333;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 12px;
+        min-width: 129px;
+        border-right: 1px solid #ccc;
+    }
+    #menu-bar .nav-item:first-child {
+        border-left: 1px solid #ccc;
+    }
+
+    #menu-bar .nav-item > a:hover {
+        background-color: #eeeeee;
+    }
+
+    #menu-bar .nav-item > a:focus {
+        border: 2px solid #a2cdf3;
+    }
+
+    #menu-bar .nav-item > a:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 6px solid #c4c4c4;
+        border-left: 6px solid transparent;
+        right: 8px;
+        bottom: 1px;
+    }
+
+    #menu-bar .nav-item > a:hover::before {
+        border-bottom: 6px solid #333333;
+    }
+
+    #menu-bar .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    #menu-bar .dropdown-menu a:hover {
+        color: #57a3c1;
+        background-color: #fff;
+        border-left: 3px solid #57a3c1;
+    }
+
+    #menu-bar .dropdown-toggle::after{
+        display: none;
+    }
+
+    #search {
+        width: 45px;
+        height: 35px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    
+    
+
+    
+}
+
+
+
+
+
+
+#carousel-area{
+    width: 100%;
+    background-color: #333333;
+
+}
+#carouselExampleIndicators .carousel-indicators{
+    position: absolute;
+    left: auto;
+    right: 20px;
+    bottom: 20px;
+    margin:0;
+    align-items: center;
+    
+}
+#carouselExampleIndicators .carousel-indicators li{
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 1;
+}
+#carouselExampleIndicators .carousel-indicators li.active{    
+    border: 1px solid #b94840;
+    border-radius: 0;
+    background-color: rgba(255,255,255,0);  
+}
+
+
+
+.phone-top4 .nav-item {
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+}
+.phone-top4 .nav-item .nav-link {
+    color: #fff;
+    font-size: 14px;
+    padding: 18px 14px;
+}
+.phone-top4 .nav-item:nth-child(1) {
+    background-color: #4276a6;
+}
+.phone-top4 .nav-item:nth-child(2) {
+    background-color: #b94840;
+}
+.phone-top4 .nav-item:nth-child(3) {
+    background-color: #896555;
+}
+.phone-top4 .nav-item:nth-child(4) {
+    background-color: #955ba5;
+}
+
+
+
+
+
